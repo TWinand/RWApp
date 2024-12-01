@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { Lorem } from "./testPage.js"
+import { Lorem } from "./ContentContainer.js"
 import { Boxes } from '../components/ui/background-boxes.js'
 import { cn } from "@/utils/cn";
 //import { SunSystem } from "@/components/ui/sunSystem"

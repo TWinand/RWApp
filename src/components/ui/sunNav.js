@@ -24,7 +24,7 @@ const infoVar = {
 
 
 const sunVar = {
-    open: { filter: "brightness(.9)", boxShadow: "5px 5px 0 rgba(0, 0, 0, 0.2)" },
+    open: { filter: "brightness(.7)", boxShadow: "5px 5px 0 rgba(0, 0, 0, 0.2)" },
     closed: { filter: "brightness(1)" },
 }
 export function SunNav() {
@@ -37,7 +37,7 @@ export function SunNav() {
         <motion.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.5 }} className="relative flex-no-wrap flex w-full items-center justify-between z-50">
             <motion.nav animate={isOpen ? "open" : "closed"} className="fixed top-5 left-14 items-center justify-center flex ">
 
-                <motion.button onClick={toggle} variants={sunVar} type="button" whileTap={{ scale: 0.9 }} title="home" className=" w-14 h-14 bg-gradient-to-b from-yellow-200 to-orange-400 rounded-full z-50" ><FontAwesomeIcon className="text-sky-900" icon={isOpen ? faXmark : faBars} /></motion.button>
+                <motion.button onClick={toggle} variants={sunVar} type="button" whileTap={{ scale: 0.9 }} title="home" className=" w-14 h-14 bg-gradient-to-br from-yellow-200 to-orange-500 rounded-full z-50" ><FontAwesomeIcon className="text-sky-900" icon={isOpen ? faXmark : faBars} /></motion.button>
 
                 <motion.a href="#pv" variants={pvVar} type="button" title="Photovoltaik" className="absolute" > <FontAwesomeIcon className="text-orange-400 z-40 " icon={faSolarPanel} /></motion.a>
                 <motion.a href="#elektro" variants={elektroVar} type="button" title="Elektrotechnik" className="absolute" ><FontAwesomeIcon className="text-orange-400 z-40" icon={faBolt} /></motion.a>

@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 
-export function Lorem(id) {
+export function ContentContainer(id) {
 
     return (
-        <div className="relative flex bg-gradient-to-t from-sky-900 to-sky-950 text-white p-10 shadow-lg shadow-black/70">
+        <div className="relative flex bg-gradient-to-br from-blue-200 to-blue-500 text-black p-10 shadow-lg shadow-black/70">
             <h1 id={id.id}>{id.name}</h1>
             <div>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem.
