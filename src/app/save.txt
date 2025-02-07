@@ -1,0 +1,11 @@
+   <div className="grid grid-cols-1">
+
+                        <motion.div initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ type: "spring", stiffness: 100 }} className="col-span-1 flex flex-col items-center justify-between pt-5 2xl:pt-20">
+                            <div className="origin-center rotate-45 grid grid-cols-2 gap-1 2xl:gap-4">
+                                <motion.a href="#pv" className={style}> <div className="text-center -rotate-45"><FontAwesomeIcon className="text-orange-400 size-5 md:size-10 backdrop-filter drop-shadow-lg" icon={faSolarPanel} /><h1>Photovoltaik</h1></div></motion.a>
+                                <motion.a href="#elektro" className={style}><div className="text-center -rotate-45"><FontAwesomeIcon className="text-orange-400 size-5 md:size-10 backdrop-filter drop-shadow-lg" icon={faBolt} /><h1>Elektrotechnik</h1></div></motion.a>
+                                <motion.a href="#netz" className={style}><div className="text-center -rotate-45"><FontAwesomeIcon className="text-orange-400 size-5 md:size-10 backdrop-filter drop-shadow-lg" icon={faNetworkWired} /><h1>EDV, TV & Netzwerktechnik</h1></div></motion.a>
+                                <motion.a href="#kontakt" className={style}><div className="text-center -rotate-45"><FontAwesomeIcon className="text-orange-400 size-5 md:size-10 backdrop-filter drop-shadow-lg" icon={faUser} /><h1>Kontakt</h1></div></motion.a>
+                            </div>
+                        </motion.div>
+                    </div>
