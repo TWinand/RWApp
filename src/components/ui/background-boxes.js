@@ -65,4 +65,3 @@ export const BoxesCore = ({ className, ...rest }) => {
     )
 }
 
-export const Boxes = React.memo(BoxesCore)

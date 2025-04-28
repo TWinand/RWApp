@@ -31,5 +31,8 @@ function addVariablesForColors({ addBase, theme }) {
 
   addBase({
     ":root": newVars,
+    'h1': { fontSize: theme('fontSize.2xl') },
+    'h2': { fontSize: theme('fontSize.xl') },
+    'h3': { fontSize: theme('fontSize.lg') },
   });
 }
