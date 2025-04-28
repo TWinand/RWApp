@@ -48,7 +48,7 @@ export const Banner = ({
         (<div className={cn("font-bold", className)}>
             <div className="mt-4">
                 <div
-                    className="text-2xl md:text-6xl leading-snug tracking-wide">
+                    className="text-2xl md:text-5xl leading-snug tracking-wide">
                     {renderWords()}
                 </div>
             </div>

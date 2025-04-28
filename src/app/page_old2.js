@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { Lorem } from "./testPage.js"
+import { ContentContainer } from "../components/ui/contentContainer.js"
 import { Boxes } from '../components/ui/background-boxes'
 import { cn } from "@/utils/cn";
 //import { SunSystem } from "@/components/ui/sunSystem"
@@ -28,10 +28,10 @@ export default function Home() {
                 </div>
 
 
-                <div className="relative text-white rounded-2xl bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg p-10"><h1 id="pv">PV</h1><Lorem /></div>
-                <div className="relative text-white rounded-2xl bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg p-10"><h1 id="elektro">Elektro</h1><Lorem /></div>
-                <div className="relative text-white rounded-2xl bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg p-10"><h1 id="netz">Netz</h1><Lorem /></div>
-                <div className="relative text-white rounded-2xl bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg p-10"><h1 id="info">Info</h1><Lorem /></div>
+                <div className="relative text-white rounded-2xl bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg p-10"><h1 id="pv">PV</h1><ContentContainer /></div>
+                <div className="relative text-white rounded-2xl bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg p-10"><h1 id="elektro">Elektro</h1><ContentContainer /></div>
+                <div className="relative text-white rounded-2xl bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg p-10"><h1 id="netz">Netz</h1><ContentContainer /></div>
+                <div className="relative text-white rounded-2xl bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg p-10"><h1 id="info">Info</h1><ContentContainer /></div>
             </motion.div>
         </main >
     );
