@@ -4,8 +4,8 @@ import React from "react";
 import { ContentContainer } from "@/components/ui/contentContainer.js"
 import { cn } from "@/utils/cn";
 //import { SunSystem } from "@/components/ui/sunSystem"
-import { SunNav } from "@/components/ui/sunNav.js"
-import { NavBar } from "@/components/ui/navBar.js"
+import { SunNav } from "@/components/ui/trash/sunNav.js"
+import { NavBar } from "@/components/ui/trash/navBar.js"
 
 import { motion } from 'framer-motion'
 
@@ -15,9 +15,9 @@ import { faSolarPanel, faBolt, faNetworkWired, faUser, faBars, faXmark, } from '
 import { Footer } from '@/components/ui/footer.js'
 
 import { Banner } from "@/components/ui/banner.js"
-import { Parallax } from "@/components/ui/parallax.js"
+import { Parallax } from "@/components/ui/trash/parallax.js"
 
-import { Logo } from "@/components/ui/logo.js"
+import { Logo } from "@/components/ui/trash/logo.js"
 
 const words = 'Herzlich willkommen bei RW-Elektrotechnik GmbH & Co. KG.';
 const tag = 'RW-Elektrotechnik GmbH & Co. KG.';

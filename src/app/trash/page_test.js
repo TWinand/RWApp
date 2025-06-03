@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from 'next/image'
 import { cn } from "@/utils/cn";
 //import { SunSystem } from "@/components/ui/sunSystem"
-import { SunNav } from "@/components/ui/sunNav.js"
+import { SunNav } from "@/components/ui/trash/sunNav.js"
 
 import { motion } from 'framer-motion'
 
@@ -11,14 +11,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSolarPanel, faBolt, faNetworkWired, faUser, faBars, faXmark, } from '@fortawesome/free-solid-svg-icons'
 
 import { Banner } from "@/components/ui/banner.js"
-import { Parallax } from "@/components/ui/parallax.js"
+import { Parallax } from "@/components/ui/trash/parallax.js"
 import { Footer } from '@/components/ui/footer.js'
 
 import { BlurContainer } from "@/components/ui/blurContainer"
 
-import { Logo } from "@/components/ui/logo.js"
+import { Logo } from "@/components/ui/trash/logo.js"
 import { ContentContainer } from "@/components/ui/contentContainer";
-import { GoogleGeminiEffect } from "@/components/googleGemini";
+import { GoogleGeminiEffect } from "@/components/ui/trash/googleGemini";
 
 import { ThreeCanvas } from "@/components/threejs/threeCanvas";
 import { Content } from "@/components/ui/content";
