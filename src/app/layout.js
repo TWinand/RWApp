@@ -1,8 +1,7 @@
-import localFont from 'next/font/local';
+import { Roboto } from 'next/font/google'
 import "../css/globals.css";
 
-
-const font = localFont({ src: [{ path: '../fonts/Open_Sans/static/OpenSans-Light.ttf', weight: '300', style: 'normal' }] });
+const font = Roboto({ weight: ['100'], style: ['normal'], subsets: ['latin'], display: 'swap' });
 
 
 export const metadata = {
@@ -12,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="de">
       <body className={font.className}>{children}</body>
     </html>
   );

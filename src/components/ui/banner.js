@@ -3,6 +3,11 @@ import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/utils/cn";
 
+
+const textColor = "bg-clip-text text-transparent bg-gradient-to-r from-sky-200 to-sky-500";
+const textColorTag = "bg-clip-text text-transparent bg-gradient-to-r from-orange-300 to-orange-400";
+
+
 export const Banner = ({
     words,
     tag,
@@ -23,11 +28,11 @@ export const Banner = ({
     }, [scope.current]);
 
     const renderWords = () => {
-        let color = "text-blue-900";
+        let color = textColor;
         return (
             (<motion.div ref={scope}>
                 {wordsArray.map((word, idx) => {
-                    tag.includes(word) == true ? color = "text-orange-400" : color = "text-blue-900";
+                    tag.includes(word) == true ? color = textColorTag : color = textColor;
                     return (
                         (<motion.span
                             key={word + idx}

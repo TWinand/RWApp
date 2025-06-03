@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 
-import { ContentContainer } from "../components/ui/contentContainer.js"
-import { Boxes } from '../components/ui/background-boxes.js'
+import { ContentContainer } from "../../components/ui/contentContainer.js"
+import { Boxes } from '../../components/ui/background-boxes.js'
 import { cn } from "@/utils/cn";
 //import { SunSystem } from "@/components/ui/sunSystem"
-import { SunNav } from "@/components/ui/sunNav.js"
+import { SunNav } from "@/components/ui/trash/sunNav.js"
 import { motion } from 'framer-motion'
 import { Banner } from "@/components/ui/banner.js"
 
