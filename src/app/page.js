@@ -1,3 +1,8 @@
+
+
+
+
+
 "use client";
 import React, { useState } from 'react'
 import { HeadMenu } from "@/components/ui/headMenu"
@@ -21,7 +26,7 @@ export default function Home() {
             <SideNav isOpen={sideNavOpen} onClose={() => setSideNavOpen(false)} />
             <HeadMenu onMenuClick={() => setSideNavOpen(true)} />
 
-            <div id="#Home" className="relative flex flex-col min-h-screen w-full bg-white justify-center item-center bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${src})` }}>
+            <div className="relative flex flex-col min-h-screen w-full bg-white justify-center item-center bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${src})` }}>
 
                 <div className="absolute inset-0 bg-slate-500/20 backdrop-brightness-75 h-screen" />
 
@@ -35,20 +40,11 @@ export default function Home() {
 
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 from-2% h-64" />
 
-            <div className="w-full" id="Elektrotechnik">
-                <Lamp>Das Ihnen ein Licht aufgeht <br /> ist unser Handwerk</Lamp>
-            </div>
-            <div className="w-full" id="Photovoltaik">
-                <Lamp>Das Ihnen ein Licht aufgeht <br /> ist unser Handwerk</Lamp>
-            </div>
-            <div className="w-full" id="Netzwerktechnik">
-                <Lamp>Das Ihnen ein Licht aufgeht <br /> ist unser Handwerk</Lamp>
-            </div>
-            <div className="w-full" id="Kontakt">
-                <Lamp>Das Ihnen ein Licht aufgeht <br /> ist unser Handwerk</Lamp>
-            </div>
+            <div></div>
 
 
+
+            <Lamp>Das Ihnen ein Licht aufgeht <br /> ist unser Handwerk</Lamp>
         </main>
     );
 }
