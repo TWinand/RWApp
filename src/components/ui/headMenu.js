@@ -18,7 +18,7 @@ export function HeadMenu({ onMenuClick }) {
                         <h1 className={`font-medium text-white ml-4 ${linkStyle}`} > RW-Elektrotechnik </h1>
                     </div>
                 </Link>
-                <div className="flex flex-row font-medium text-white items-center justify-between gap-24">
+                <div className="flex flex-row font-medium text-white items-center justify-between gap-24 invisible lg:visible">
                     <Link href="#Elektrotechnik" ><Unplug /></Link>
                     <Link href="#Photovoltaik"><Sun /></Link>
                     <Link href="#Netzwerktechnik"><EthernetPort /></Link>
