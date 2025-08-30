@@ -1,3 +1,8 @@
+
+
+
+
+
 "use client";
 import React, { useState } from 'react'
 import { HeadMenu } from '@/components/ui/headMenu'
@@ -25,6 +30,7 @@ export default function Home() {
             <HeadMenu onMenuClick={() => setSideNavOpen(true)} />
 
             <div id="#Home" className="relative flex flex-col min-h-96 w-full bg-white justify-center item-center bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${src})` }}>
+
 
                 <div className="absolute inset-0 bg-slate-500/20 backdrop-brightness-75 h-full" />
 
@@ -64,6 +70,8 @@ export default function Home() {
             </div>
 
 
+
+            <Lamp>Das Ihnen ein Licht aufgeht <br /> ist unser Handwerk</Lamp>
         </main>
     );
 }

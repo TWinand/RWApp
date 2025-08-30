@@ -4,7 +4,6 @@ import { LogoSvg } from '@/components/ui/logoSvg'
 import { AlignJustify, EthernetPort, Unplug, Sun, Contact } from 'lucide-react'
 import Link from 'next/link';
 
-const linkStyle = "flex flex-row gap-4 hover:text-amber-300"
 
 export function HeadMenu({ onMenuClick }) {
 
@@ -23,6 +22,7 @@ export function HeadMenu({ onMenuClick }) {
                     <Link href="#Photovoltaik"><Sun /></Link>
                     <Link href="#Netzwerktechnik"><EthernetPort /></Link>
                     <Link href="#Kontakt"><Contact /></Link>
+
                 </div>
                 <button onClick={onMenuClick} className="mr-2 text-white rounded-md bg-gray-900 p-2 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-70 shadow-lg" >
                     <AlignJustify />
