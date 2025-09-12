@@ -13,8 +13,6 @@ import imgN from '../../public/img/Netzwerk/netz.jpg';
 import first from '../../public/img/Photovoltaik/first.jpg';
 import second from '../../public/img/Photovoltaik/second.jpg';
 
-
-
 const words = 'Willkommen bei RW-Elektrotechnik – Ihr Partner für moderne Elektrotechnik & nachhaltige Energielösungen';
 const tag = 'Ihr Partner für moderne Elektrotechnik & nachhaltige Energielösungen';
 const src = "./img/bgimg2_cut.jpg";
@@ -30,6 +28,7 @@ export default function Home() {
             <HeadMenu onMenuClick={() => setSideNavOpen(true)} />
 
             <div id="#Home" className="relative flex flex-col min-h-96 w-full bg-white justify-center item-center bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${src})` }}>
+
 
                 <div className="absolute inset-0 bg-slate-500/20 backdrop-brightness-75 h-full" />
 
@@ -52,9 +51,6 @@ export default function Home() {
                 <Card title="Netzwerktechnik" text="Schnell, sicher und zuverlässig – für Kommunikation ohne Grenzen und eine digitale Zukunft." hashTag1="Telefonie" hashTag2="Schwesternruf" hashTag3="Notbeleuchtung" src={imgN} />
             </div>
 
-
-
-
             <div className="w-full" id="Elektrotechnik">
                 <Lamp>Mit Uns geht immer ein Licht auf</Lamp>
             </div>
@@ -69,6 +65,8 @@ export default function Home() {
             </div>
 
 
+
+            <Lamp>Das Ihnen ein Licht aufgeht <br /> ist unser Handwerk</Lamp>
         </main>
     );
 }
