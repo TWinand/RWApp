@@ -1,16 +1,17 @@
 "use client"
 import React from "react"
 import Image from 'next/image'
-import { LoaderOne } from "@/components/ui/loader";
+import { LoaderThree } from "@/components/ui/loader";
 
-
-
+const bgGlow = "transition-all duration-300 hover:shadow-[0_0_20px_rgba(252,211,77,0.8)] hover:scale-105";
+const bolt = () => `<LoaderThree />`;
 
 export function Card({ title, text, hashTag1, hashTag2, hashTag3, src }) {
 
     return (
-        <div className="max-w-sm rounded overflow-hidden shadow-lg  bg-gray-900">
+        <div className={`max-w-sm rounded overflow-hidden shadow-lg bg-gray-900  ${bgGlow}`}>
             <Image
+                loading="lazy"
                 src={src}
                 width={500}
                 height={500}

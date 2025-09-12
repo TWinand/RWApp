@@ -4,6 +4,9 @@ import { LogoSvg } from '@/components/ui/logoSvg'
 import { AlignJustify, EthernetPort, Unplug, Sun, Contact } from 'lucide-react'
 import Link from 'next/link';
 
+const linkStyle = "flex flex-row gap-4 hover:text-amber-300"
+const bgGlow = "transition-all duration-300 hover:shadow-[0_0_20px_rgba(252,211,77,0.8)] hover:scale-105";
+
 
 export function HeadMenu({ onMenuClick }) {
 
@@ -18,13 +21,12 @@ export function HeadMenu({ onMenuClick }) {
                     </div>
                 </Link>
                 <div className="flex flex-row font-medium text-white items-center justify-between gap-24 invisible lg:visible">
-                    <Link href="#Elektrotechnik" ><Unplug /></Link>
-                    <Link href="#Photovoltaik"><Sun /></Link>
-                    <Link href="#Netzwerktechnik"><EthernetPort /></Link>
-                    <Link href="#Kontakt"><Contact /></Link>
-
+                    <Link className={`${linkStyle}`} href="#Elektrotechnik" ><Unplug /></Link>
+                    <Link className={`${linkStyle}`} href="#Photovoltaik"><Sun /></Link>
+                    <Link className={`${linkStyle}`} href="#Netzwerktechnik"><EthernetPort /></Link>
+                    <Link className={`${linkStyle}`} href="#Kontakt"><Contact /></Link>
                 </div>
-                <button onClick={onMenuClick} className="mr-2 text-white rounded-md bg-gray-900 p-2 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-70 shadow-lg" >
+                <button onClick={onMenuClick} className={`mr-2 text-white rounded-md bg-gray-900 p-2 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-70 shadow-lg ${bgGlow}`} >
                     <AlignJustify />
                 </button>
             </div>

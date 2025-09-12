@@ -1,8 +1,3 @@
-
-
-
-
-
 "use client";
 import React, { useState } from 'react'
 import { HeadMenu } from '@/components/ui/headMenu'
@@ -10,10 +5,13 @@ import { Lamp } from '@/components/ui/lamp'
 import { Banner } from '@/components/ui/banner'
 import { SideNav } from '@/components/ui/sideNav';
 import { Card } from '@/components/ui/card';
+import { CompareImg } from '@/components/ui/compareImg';
 import imgE from '../../public/img/Elektro/elektro.jpg';
 import imgP from '../../public/img/Photovoltaik/pv.jpg';
 import imgN from '../../public/img/Netzwerk/netz.jpg';
 
+import first from '../../public/img/Photovoltaik/first.jpg';
+import second from '../../public/img/Photovoltaik/second.jpg';
 
 const words = 'Willkommen bei RW-Elektrotechnik – Ihr Partner für moderne Elektrotechnik & nachhaltige Energielösungen';
 const tag = 'Ihr Partner für moderne Elektrotechnik & nachhaltige Energielösungen';
@@ -47,26 +45,23 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="relative flex flex-col lg:flex-row text-white gap-4" >
+            <div className="relative flex flex-col lg:flex-row text-white gap-4 pb-24" >
                 <Card title="Elektrotechnik" text="Innovative Lösungen für mehr Komfort, Sicherheit und Effizienz – zuverlässig, modern und zukunftsorientiert." hashTag1="Beratung" hashTag2="Planung" hashTag3="Installation" src={imgE} />
                 <Card title="Photovoltaik" text="Sauber, effizient und unabhängig: Mit Solarstrom nutzen Sie die Kraft der Sonne für eine nachhaltige Zukunft." hashTag1="Batterie" hashTag2="Repowering" hashTag3="WallBox" src={imgP} />
                 <Card title="Netzwerktechnik" text="Schnell, sicher und zuverlässig – für Kommunikation ohne Grenzen und eine digitale Zukunft." hashTag1="Telefonie" hashTag2="Schwesternruf" hashTag3="Notbeleuchtung" src={imgN} />
             </div>
 
-
-
-
             <div className="w-full" id="Elektrotechnik">
                 <Lamp>Mit Uns geht immer ein Licht auf</Lamp>
             </div>
-            <div className="w-full" id="Photovoltaik">
-                <Lamp>Mit Uns geht immer ein Licht auf</Lamp>
+            <div className="relative flex flex-col items-center w-full" id="Photovoltaik">
+                <CompareImg ImageOne={first} ImageTwo={second} />
             </div>
             <div className="w-full" id="Netzwerktechnik">
-                <Lamp>Mit Uns geht immer ein Licht auf</Lamp>
+
             </div>
             <div className="w-full" id="Kontakt">
-                <Lamp>Mit Uns geht immer ein Licht auf</Lamp>
+
             </div>
 
 
