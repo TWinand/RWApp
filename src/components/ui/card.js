@@ -3,6 +3,7 @@ import React from "react"
 import Image from 'next/image'
 import { LoaderThree } from "@/components/ui/loader";
 
+
 const bgGlow = "transition-all duration-300 hover:shadow-[0_0_20px_rgba(252,211,77,0.8)] hover:scale-105";
 const bolt = () => `<LoaderThree />`;
 
