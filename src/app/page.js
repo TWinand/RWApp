@@ -10,6 +10,8 @@ import imgE from '../../public/img/Elektro/elektro.jpg';
 import imgP from '../../public/img/Photovoltaik/pv.jpg';
 import imgN from '../../public/img/Netzwerk/netz.jpg';
 
+import { ContactCard } from '@/components/ui/contactCard';
+
 import first from '../../public/img/Photovoltaik/first.jpg';
 import second from '../../public/img/Photovoltaik/second.jpg';
 
@@ -60,13 +62,9 @@ export default function Home() {
             <div className="w-full" id="Netzwerktechnik">
 
             </div>
-            <div className="w-full" id="Kontakt">
-
+            <div className="relative flex flex-col items-center w-full" id="Kontakt">
+                <ContactCard />
             </div>
-
-
-
-            <Lamp>Das Ihnen ein Licht aufgeht <br /> ist unser Handwerk</Lamp>
         </main>
     );
 }
