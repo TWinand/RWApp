@@ -13,7 +13,7 @@ export function HeadMenu({ onMenuClick }) {
     return (
         <div className="fixed top-0 left-0 right-0 z-40 bg-gray-200 rounded-b bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 shadow-lg">
             <div className="relative flex flex-row items-center justify-between">
-                <Link href="#Home" >
+                <Link href="/" >
                     <div className="flex flex-row items-center justify-between p-1">
                         <LogoSvg />
 
@@ -21,10 +21,10 @@ export function HeadMenu({ onMenuClick }) {
                     </div>
                 </Link>
                 <div className="flex flex-row font-medium text-white items-center justify-between gap-24 invisible lg:visible">
-                    <Link className={`${linkStyle}`} href="#Elektrotechnik" ><Unplug /></Link>
-                    <Link className={`${linkStyle}`} href="#Photovoltaik"><Sun /></Link>
-                    <Link className={`${linkStyle}`} href="#Netzwerktechnik"><EthernetPort /></Link>
-                    <Link className={`${linkStyle}`} href="#Kontakt"><Contact /></Link>
+                    <Link className={`${linkStyle}`} href="/elektro" ><Unplug /></Link>
+                    <Link className={`${linkStyle}`} href="/pv"><Sun /></Link>
+                    <Link className={`${linkStyle}`} href="/edv"><EthernetPort /></Link>
+                    <Link className={`${linkStyle}`} href="/#Kontakt"><Contact /></Link>
                 </div>
                 <button onClick={onMenuClick} className={`mr-2 text-white rounded-md bg-gray-900 p-2 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-70 shadow-lg ${bgGlow}`} >
                     <AlignJustify />

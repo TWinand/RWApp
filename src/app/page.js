@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from 'react'
+
+
 import { HeadMenu } from '@/components/ui/headMenu'
 import { Lamp } from '@/components/ui/lamp'
 import { Banner } from '@/components/ui/banner'
@@ -9,6 +11,7 @@ import { CompareImg } from '@/components/ui/compareImg';
 import imgE from '../../public/img/Elektro/elektro.jpg';
 import imgP from '../../public/img/Photovoltaik/pv.jpg';
 import imgN from '../../public/img/Netzwerk/netz.jpg';
+
 
 import { ContactCard } from '@/components/ui/contactCard';
 
@@ -29,7 +32,7 @@ export default function Home() {
             <SideNav isOpen={sideNavOpen} onClose={() => setSideNavOpen(false)} />
             <HeadMenu onMenuClick={() => setSideNavOpen(true)} />
 
-            <div id="#Home" className="relative flex flex-col min-h-96 w-full bg-white justify-center item-center bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${src})` }}>
+            <div className="relative flex flex-col min-h-96 w-full bg-white justify-center item-center bg-cover bg-no-repeat bg-center" style={{ backgroundImage: `url(${src})` }}>
 
 
                 <div className="absolute inset-0 bg-slate-500/20 backdrop-brightness-75 h-full" />
@@ -53,15 +56,6 @@ export default function Home() {
                 <Card title="Netzwerktechnik" text="Schnell, sicher und zuverlässig – für Kommunikation ohne Grenzen und eine digitale Zukunft." hashTag1="Telefonie" hashTag2="Schwesternruf" hashTag3="Notbeleuchtung" src={imgN} />
             </div>
 
-            <div className="w-full" id="Elektrotechnik">
-                <Lamp>Mit Uns geht immer ein Licht auf</Lamp>
-            </div>
-            <div className="relative flex flex-col items-center w-full" id="Photovoltaik">
-                <CompareImg ImageOne={first} ImageTwo={second} />
-            </div>
-            <div className="w-full" id="Netzwerktechnik">
-
-            </div>
             <div className="relative flex flex-col items-center w-full" id="Kontakt">
                 <ContactCard />
             </div>

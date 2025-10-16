@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link"
-import { AlignJustify, EthernetPort, Unplug, Sun, Contact, X } from 'lucide-react'
+import { EthernetPort, Unplug, Sun, Contact, X } from 'lucide-react'
+
 
 export function SideNav({ isOpen, onClose }) {
 
@@ -18,10 +19,10 @@ export function SideNav({ isOpen, onClose }) {
                 </button>
             </div>
             <nav className="flex flex-col gap-4">
-                <Link href="Elektrotechnik" className={linkStyle} ><Unplug /> Elektrotechnik</Link>
-                <Link href="Photovoltaik" className={linkStyle}><Sun /> Photovoltaik</Link>
-                <Link href="Netzwerktechnik" className={linkStyle}><EthernetPort /> Netzwerktechnik</Link>
-                <Link href="Kontakt" className={linkStyle}><Contact /> Kontakt</Link>
+                <Link href="/elektro" className={linkStyle} ><Unplug /> Elektrotechnik</Link>
+                <Link href="/pv" className={linkStyle}><Sun /> Photovoltaik</Link>
+                <Link href="/edv" className={linkStyle}><EthernetPort /> Netzwerktechnik</Link>
+                <Link href="/#Kontakt" className={linkStyle}><Contact /> Kontakt</Link>
             </nav>
         </div>
     )
