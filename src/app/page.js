@@ -56,7 +56,7 @@ export default function Home() {
                 <Card title="Netzwerktechnik" text="Schnell, sicher und zuverlässig – für Kommunikation ohne Grenzen und eine digitale Zukunft." hashTag1="Telefonie" hashTag2="Schwesternruf" hashTag3="Notbeleuchtung" src={imgN} />
             </div>
 
-            <div className="relative flex flex-col items-center w-full" id="Kontakt">
+            <div className="relative flex flex-col items-center w-full m-4" id="Kontakt">
                 <ContactCard />
             </div>
         </main>
